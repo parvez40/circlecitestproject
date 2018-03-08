@@ -166,7 +166,7 @@ contract Exchange is owned {
     //////////////////////////////////
     // DEPOSIT AND WITHDRAWAL TOKEN //
     //////////////////////////////////
-    function depositOfToken(string symbolName, uint amount) {
+    function depositToken(string symbolName, uint amount) {
         uint8 symbolNameIndex = getSymbolIndexOrThrow(symbolName);
         require(tokens[symbolNameIndex].tokenContract != address(0));
 
